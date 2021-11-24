@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val random = Random()
         val count = random.nextInt(1000) + 1
         var listMK = ArrayList<ArrayList<Int>>()
+
         for (i in 1..count) {
             val m = random.nextInt(200) + 1
             val k = random.nextInt(m + 1)
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             val mk = arrayListOf<Int>(k, m)
             listMK.add(mk)
         }
+
         listView.adapter = MyAdapter(this, count, listMK)
     }
 }

@@ -14,6 +14,7 @@ class MyAdapter(context: Context, count: Int, list: ArrayList<ArrayList<Int>>): 
     private val myCount = count
     private val myContext = context
     private val myList = list
+
     override fun getCount(): Int {
         return myCount
     }
